@@ -8,8 +8,8 @@
  * See CONTRIBUTORS.txt for the list of the project authors
  */
 
+import HTTP
 import Stream
-import Client
 import XMLRPC
 
 import struct Foundation.Data
@@ -50,12 +50,12 @@ public class OpenSubtitles {
 
     // TODO: Update to stream http api
     func makeRequest(_ rpcRequest: RPCRequest) throws -> RPCResponse {
-        var request = Request(url: URL(path: path), xml: rpcRequest.xmlCompact)
+        let request = Request(url: URL(path: path), xml: rpcRequest.xmlCompact)
         request.userAgent = userAgent
 
         let response = try client.makeRequest(request)
 
-        guard let bytes = response.rawBody else {
+        guard let bytes = response.bytes else {
             throw Error.emptyResponse
         }
         let stream = InputByteStream(bytes)
