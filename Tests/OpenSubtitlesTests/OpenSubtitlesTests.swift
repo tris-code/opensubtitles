@@ -31,9 +31,4 @@ class OpenSubtitlesTests: TestCase {
             fail(String(describing: error))
         }
     }
-
-
-    static var allTests = [
-        ("testHash", testHash),
-    ]
 }
