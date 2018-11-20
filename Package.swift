@@ -28,13 +28,16 @@ let package = Package(
             url: "https://github.com/tris-foundation/compression.git",
             .branch("master")),
         .package(
+            url: "https://github.com/tris-foundation/radix.git",
+            .branch("master")),
+        .package(
             url: "https://github.com/tris-foundation/test.git",
             .branch("master"))
     ],
     targets: [
         .target(
             name: "OpenSubtitles",
-            dependencies: ["XMLRPC", "Compression", "HTTP", "File"]),
+            dependencies: ["XMLRPC", "Compression", "HTTP", "File", "Base64"]),
         .testTarget(
             name: "OpenSubtitlesTests",
             dependencies: ["OpenSubtitles", "Test"]),
