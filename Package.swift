@@ -17,13 +17,16 @@ let package = Package(
             url: "https://github.com/swift-core/compression.git",
             .branch("master")),
         .package(
+            url: "https://github.com/swift-core/radix.git",
+            .branch("master")),
+        .package(
             url: "https://github.com/swift-core/test.git",
             .branch("master"))
     ],
     targets: [
         .target(
             name: "OpenSubtitles",
-            dependencies: ["XMLRPC", "Compression", "HTTP", "File"]),
+            dependencies: ["XMLRPC", "Compression", "HTTP", "File", "Base64"]),
         .testTarget(
             name: "OpenSubtitlesTests",
             dependencies: ["OpenSubtitles", "Test"]),
