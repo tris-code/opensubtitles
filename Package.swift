@@ -11,7 +11,7 @@ let package = Package(
             url: "https://github.com/tris-code/http.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-code/xml-rpc.git",
+            url: "https://github.com/tris-code/rpc.git",
             .branch("master")),
         .package(
             url: "https://github.com/tris-code/compression.git",
