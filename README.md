@@ -5,5 +5,5 @@ OpenSubtitles client. Supported methods: search by imdbId/hash, download subtitl
 ## Package.swift
 
 ```swift
-.package(url: "https://github.com/tris-foundation/opensubtitles.git", .branch("master"))
+.package(url: "https://github.com/tris-code/opensubtitles.git", .branch("master"))
 ```

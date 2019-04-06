@@ -5,22 +5,22 @@ let package = Package(
     name: "OpenSubtitles",
     dependencies: [
         .package(
-            url: "https://github.com/tris-foundation/aio.git",
+            url: "https://github.com/tris-code/aio.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-foundation/http.git",
+            url: "https://github.com/tris-code/http.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-foundation/xml-rpc.git",
+            url: "https://github.com/tris-code/xml-rpc.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-foundation/compression.git",
+            url: "https://github.com/tris-code/compression.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-foundation/radix.git",
+            url: "https://github.com/tris-code/radix.git",
             .branch("master")),
         .package(
-            url: "https://github.com/tris-foundation/test.git",
+            url: "https://github.com/tris-code/test.git",
             .branch("master"))
     ],
     targets: [
